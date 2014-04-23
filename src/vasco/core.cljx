@@ -1,16 +1,16 @@
 (ns vasco.core
   (:require [clojure.string :as string]))
 
-;; eg. Combines "/users/:username" with {:username "john"} to get "/users/john".a
 (defn- render
   [template data]
+  ;; "/users/:username" + {:username "john"} = "/users/john"
   (letfn [(f [acc [k v]] (string/replace acc (str ":" (name k)) (str v)))]
-    (reduce f template data)))
-
-(defn make-path-fn [template]
-  (fn [& data]
     (let [m (into {} (vec (map vec (partition 2 data))))]
-      (render template m))))
+      (reduce f template m))))
+
+(defn make-path-fn
+  [path-template]
+  (fn [& data] (render path-template data)))
 
 #+clj
 (defmacro defendpoint [name-sym path]

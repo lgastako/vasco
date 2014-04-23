@@ -19,9 +19,9 @@
                               :compiler {:output-to "target/gen/test/js/testable.js"
                                          :optimizations :simple
                                          :pretty-print true}}}
-              :test-commands {"slimerjs" ["slimerjs"
-                                          :runner
-                                          "target/gen/test/js/testable.js"]}}
+              :test-commands {"phantomjs" ["phantomjs"
+                                           :runner
+                                           "target/gen/test/js/testable.js"]}}
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/clojurescript "0.0-2197"]
                  [its-log "0.2.0-bus-SNAPSHOT"]]

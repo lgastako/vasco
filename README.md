@@ -1,5 +1,7 @@
 # vasco
 
+> I am not afraid of the darkness. Real death is preferable to a life without living.
+
 A simple cljx routing library.
 
 ## Usage
@@ -36,7 +38,7 @@ And render the url template with the parameters filled in:
 ;; "/profile/john"
 ```
 
-Right now there is absolutely no magic about the params.
+Right now there is absolutely no special treatment of the params.
 
 ## License
 
