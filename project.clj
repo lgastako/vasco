@@ -1,4 +1,4 @@
-(defproject vasco "0.1.0-SNAPSHOT"
+(defproject vasco "0.9.0"
   :description "simple cljx routes"
   :url "http://github.com/lgastako/vasco"
   :license {:name "Eclipse Public License"
