@@ -24,7 +24,7 @@
                                            "target/gen/test/js/testable.js"]}}
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/clojurescript "0.0-2197"]
-                 [its-log "0.2.0-bus-SNAPSHOT"]]
+                 [its-log "0.2.0"]]
   :hooks [leiningen.cljsbuild cljx.hooks]
   :min-lein-version "2.0.0"
   :plugins [[com.keminglabs/cljx "0.3.2" :exclusions [org.clojure/clojure]]
