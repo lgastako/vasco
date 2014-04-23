@@ -42,7 +42,7 @@ Right now there is absolutely no special treatment of the params.
 
 ## License
 
-Copyright © 2014 John
+Copyright © 2014 John Evans
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
