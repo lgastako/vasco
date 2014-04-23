@@ -21,4 +21,5 @@
   (is (= "/users/john" (test-profile-path :username "john")))
   (is (= "/a/1/b/foo/c/:d" (test-abc-path :a 1 :b "foo" :c :d))))
 
-(run-tests)
+;;(run-tests)
+
